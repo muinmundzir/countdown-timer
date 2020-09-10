@@ -1,0 +1,136 @@
+body {
+  background-image: url("./made-in-abyss.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto;
+  width: 50%;
+  place-content: center;
+  background: black;
+  opacity: 0.6;
+  border-radius: 8px;
+}
+
+h1 {
+  color: whitesmoke;
+  margin: auto;
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+
+.countdown {
+  color: whitesmoke;
+  margin: auto;
+  padding: 1rem;
+  line-height: 1px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.countdown-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 2rem;
+  text-align: center;
+}
+
+.countdown-section p {
+  font-size: 4rem;
+  padding: 5px;
+}
+
+.action {
+  margin-top: auto;
+  text-align: center;
+}
+
+.button {
+  border-radius: 5px;
+  border: none;
+  background-color: black;
+  opacity: 0.6;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 10px 15px;
+  font-family: inherit;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.modal-container {
+  position: fixed;
+  background-color: rgba(73, 68, 68, 0.5);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-container.active {
+  display: flex;
+}
+
+.modal-body {
+  position: relative;
+  padding: 1rem;
+  background-color: #eee;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px black;
+}
+
+#close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+form {
+  margin: 2rem 0;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+input:focus {
+  border: 1px solid black;
+}
+
+#close {
+  font-size: 1rem;
+  border: none;
+}
